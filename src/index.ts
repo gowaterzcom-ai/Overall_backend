@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import helmet from "helmet";
 import bodyParser from 'body-parser';
 import passport from "passport"
+import rateLimit from "express-rate-limit";
 import { customerRoutes, ownerRoutes, authRoutes, queryRoutes, paymentRoutes, adminRoutes, superAgentRoutes, agentRoutes } from "./routes";
 import session from 'express-session';
 import "./utils/passport" // Make sure this imports your updated passport config
