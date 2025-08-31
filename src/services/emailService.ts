@@ -26,7 +26,7 @@ static async send(receiverEmail: string | string[], options: { subjectLine: stri
     this.initialize();
   }
 
-  const senderEmail = process.env.SENDER_MAIL || "arbaj.right@gmail.com";
+  const senderEmail = process.env.SENDER_MAIL || "admin@gowaterz.com";
   
   const msg = {
     to: receiverEmail,
